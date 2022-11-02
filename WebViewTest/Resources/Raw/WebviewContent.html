@@ -1,0 +1,33 @@
+﻿<html lang="en" class="ui-mobile">
+<head>
+    <title>Link Testing</title>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.js"></script>
+</head>
+<body class="ui-mobile-viewport ui-overlay-a">
+
+<h1 class="ui-title" role="heading" aria-level="1">External link test</h1>
+<div data-role="content" class="ui-content" role="main">
+    <div id="cc" class="">
+        <div class="fullwidth ui-bar-b heading bottomMargin">Link test</div>
+        <span class="wysiwygtext textWrapping">
+            <div class="wysiwygtext">
+                <p>This custom content contains two links to the same url, but one has target=_blank on it and one doesn't.</p>
+                <p>current window:</p>
+                <p><a href="http://www.google.com" class="ui-link">Google in this window</a></p>
+                <p><a href="http://www.microsoft.com" class="ui-link">Microsoft in this window</a></p>
+
+                <p>external window:</p>
+                <p><a href="http://www.google.com" target="_blank" rel="noopener" class="ui-link">Google in an external window</a></p>
+                <p><a href="http://www.microsoft.com" target="_blank" rel="noopener" class="ui-link">Microsoft in an external window</a></p>
+            </div>
+        </span>
+    </div>
+</div>
+</body>
+</html>

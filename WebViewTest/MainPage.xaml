@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:renderers="clr-namespace:WebViewTest.Renderers" xmlns:webviewtest="clr-namespace:WebViewTest" x:DataType="webviewtest:MainPage"
+             x:Class="WebViewTest.MainPage">
+    <Grid Margin="20">
+
+        <renderers:CustomWebView Grid.Row="0"
+             Grid.Column="0"
+     Source="https://learn.microsoft.com/dotnet/maui" />
+
+        <StackLayout x:Name="ActivityLayout" 
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Fill"
+                 Orientation="Vertical"
+                 IsVisible="True"
+                 BackgroundColor="Black"
+                 Opacity=".25">
+        <ActivityIndicator x:Name="ActivityIndicator"
+            Color="Red"
+            BackgroundColor="White"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Scale="8"
+            IsVisible="True"
+            IsRunning="True">
+        </ActivityIndicator>
+    </StackLayout>
+
+</Grid>
+</ContentPage>
